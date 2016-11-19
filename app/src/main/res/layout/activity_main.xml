@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="askfortricks.com.customviewdemo.MainActivity">
+
+
+    <askfortricks.com.customviewdemo.customview.TextViewCustom
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am Roboto Bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        app:font="@string/font_roboto_bold"
+        android:id="@+id/textViewCustom" />
+
+    <askfortricks.com.customviewdemo.customview.TextViewCustom
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am Roboto regular"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:font="@string/font_roboto_regular" />
+
+    <askfortricks.com.customviewdemo.customview.TextViewCustom
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am Roboto italic"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        app:font="@string/font_roboto_italic"
+        android:id="@+id/textViewCustom2" />
+
+    <askfortricks.com.customviewdemo.customview.EditTextCustom
+        android:id="@+id/editTextCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="I am edit text"
+        android:textColor="@android:color/black"
+        app:font="@string/font_roboto_bold"
+        android:textSize="20sp"/>
+
+</LinearLayout>
